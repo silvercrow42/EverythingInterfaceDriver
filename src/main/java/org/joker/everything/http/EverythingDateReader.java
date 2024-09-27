@@ -2,11 +2,8 @@ package org.joker.everything.http;
 
 import com.alibaba.fastjson2.JSONReader;
 import com.alibaba.fastjson2.reader.ObjectReader;
-import com.sun.jna.platform.win32.WinBase;
-import com.sun.jna.platform.win32.WinNT;
 
 import java.lang.reflect.Type;
-import java.math.BigDecimal;
 import java.math.BigInteger;
 
 /**
