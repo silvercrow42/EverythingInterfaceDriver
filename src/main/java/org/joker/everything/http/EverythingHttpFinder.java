@@ -6,7 +6,6 @@ import com.alibaba.fastjson2.JSONObject;
 import org.joker.everything.entity.EverythingRequest;
 import org.joker.everything.entity.EverythingResponse;
 
-import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 /**
@@ -41,9 +40,8 @@ public class EverythingHttpFinder {
      *
      * @param request 查询请求对象，包含查询参数等信息
      * @return 返回查询结果对象，包含Everything服务的响应信息
-     * @throws IOException 如果发送HTTP请求或接收响应时发生错误
      */
-    public EverythingResponse query(EverythingRequest request) throws IOException {
+    public EverythingResponse query(EverythingRequest request) {
         // 将请求对象转换为JSON字符串
         String jsonString = JSONObject.toJSONString(request);
         // 将JSON字符串解析为JSONObject对象，以便后续使用
